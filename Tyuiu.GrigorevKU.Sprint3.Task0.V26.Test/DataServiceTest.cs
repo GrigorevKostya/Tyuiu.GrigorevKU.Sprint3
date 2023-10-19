@@ -7,15 +7,14 @@ namespace Tyuiu.GrigorevKU.Sprint3.Task0.V26.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetSumSeries()
+        public void ValidGetMultiplySeries()
         {
             DataService ds = new DataService();
 
-            double value = 1.8;
             int startValue = 1;
             int stopValue = 2;
 
-            double res = ds.GetSumSeries(value, startValue, stopValue);
+            double res = ds.GetMultiplySeries(startValue, stopValue);
 
             double wait = 0.069;
             Assert.AreEqual(wait, res);

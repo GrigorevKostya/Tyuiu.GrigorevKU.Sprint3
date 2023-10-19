@@ -8,18 +8,17 @@ namespace Tyuiu.GrigorevKU.Sprint3.Task2.V6.Lib
 {
     public class DataService : ISprint3Task2V6
     {
-        public double GetSumSeries(double value, int startValue, int stopValue)
+        public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
             double sumSeries = 1;
             double stv = Convert.ToDouble(startValue);
             Convert.ToDouble(stopValue);
             do
             {
-                sumSeries = sumSeries * ((Math.Pow(0.25, stv) + 1) * Math.Cos(4));
+                sumSeries = sumSeries * ((Math.Pow(value, stv) + 1) * Math.Cos(4));
                 startValue++;
             } while (startValue <= stopValue);
             return Math.Round(sumSeries, 3);
-
         }
     }
 }

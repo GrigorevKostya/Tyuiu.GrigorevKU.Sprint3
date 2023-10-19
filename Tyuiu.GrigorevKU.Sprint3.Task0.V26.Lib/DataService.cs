@@ -8,13 +8,13 @@ namespace Tyuiu.GrigorevKU.Sprint3.Task0.V26.Lib
 {
     public class DataService : ISprint3Task0V26
     {
-        public double GetSumSeries(double value, int startValue, int stopValue)
+        public double GetMultiplySeries(int startValue, int stopValue)
         {
             double sumSeries = 1;
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                sumSeries = sumSeries * (((Math.Pow(2, i)) / (i + 1)) * Math.Cos(value));
+                sumSeries = sumSeries * (((Math.Pow(2, i)) / (i + 1)) * Math.Cos(1.8));
             }
             return Math.Round(sumSeries, 3);
         }

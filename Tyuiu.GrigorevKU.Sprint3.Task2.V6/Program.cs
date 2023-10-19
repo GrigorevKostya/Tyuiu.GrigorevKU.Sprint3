@@ -30,7 +30,7 @@ namespace Tyuiu.GrigorevKU.Sprint3.Task2.V6
             double value = 0.25;
             int startValue = 1;
             int stopValue = 10;
-            Console.WriteLine("Переменная  A = 0,5");
+            Console.WriteLine("Переменная  A = 0,25");
 
             Console.WriteLine("Старт шага = " + startValue);
 
@@ -40,7 +40,7 @@ namespace Tyuiu.GrigorevKU.Sprint3.Task2.V6
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Произведение ряда = " + ds.GetSumSeries(value, startValue, stopValue));
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
             Console.ReadKey();
         }
     }
